@@ -1,0 +1,152 @@
+{
+    "style_issues": [
+        {
+            "line": 1,
+            "column": 11,
+            "code": "E231",
+            "message": "missing whitespace after ','"
+        },
+        {
+            "line": 3,
+            "column": 2,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 3,
+            "column": 6,
+            "code": "E225",
+            "message": "missing whitespace around operator"
+        },
+        {
+            "line": 5,
+            "column": 3,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 5,
+            "column": 7,
+            "code": "E225",
+            "message": "missing whitespace around operator"
+        },
+        {
+            "line": 7,
+            "column": 4,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 7,
+            "column": 8,
+            "code": "E225",
+            "message": "missing whitespace around operator"
+        },
+        {
+            "line": 11,
+            "column": 4,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 15,
+            "column": 3,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 17,
+            "column": 4,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 17,
+            "column": 8,
+            "code": "E225",
+            "message": "missing whitespace around operator"
+        },
+        {
+            "line": 17,
+            "column": 11,
+            "code": "E701",
+            "message": "multiple statements on one line (colon)"
+        },
+        {
+            "line": 17,
+            "column": 11,
+            "code": "E231",
+            "message": "missing whitespace after ':'"
+        },
+        {
+            "line": 19,
+            "column": 4,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 19,
+            "column": 8,
+            "code": "E701",
+            "message": "multiple statements on one line (colon)"
+        },
+        {
+            "line": 19,
+            "column": 8,
+            "code": "E231",
+            "message": "missing whitespace after ':'"
+        },
+        {
+            "line": 21,
+            "column": 2,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 23,
+            "column": 3,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 23,
+            "column": 19,
+            "code": "E231",
+            "message": "missing whitespace after ','"
+        },
+        {
+            "line": 25,
+            "column": 4,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 27,
+            "column": 2,
+            "code": "E111",
+            "message": "indentation is not a multiple of 4"
+        },
+        {
+            "line": 28,
+            "column": 1,
+            "code": "W391",
+            "message": "blank line at end of file"
+        }
+    ],
+    "complexity": {
+        "blocks": [
+            {
+                "name": "calc",
+                "type": "Function",
+                "complexity": 6,
+                "rank": "B",
+                "line_start": 1,
+                "line_end": 14
+            }
+        ],
+        "maintainability_index": 60.53,
+        "mi_rank": "B",
+        "error": null
+    },
+    "black_preview": "def calc(a, b):\n    if a > 10:\n        if b > 10:\n            if a > b:\n                return a - b\n            else:\n                return b - a\n        else:\n            if a == b:\n                return 0\n            else:\n                return a + b\n    else:\n        for i in range(0, 10):\n            print(i)\n    return None\n"
+}

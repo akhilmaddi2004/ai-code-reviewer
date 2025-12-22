@@ -1,0 +1,26 @@
+{
+    "style_issues": [
+        {
+            "line": 42,
+            "column": 1,
+            "code": "W391",
+            "message": "blank line at end of file"
+        }
+    ],
+    "complexity": {
+        "blocks": [
+            {
+                "name": "decision",
+                "type": "Function",
+                "complexity": 10,
+                "rank": "B",
+                "line_start": 1,
+                "line_end": 21
+            }
+        ],
+        "maintainability_index": 56.02,
+        "mi_rank": "B",
+        "error": null
+    },
+    "black_preview": "def decision(x):\n    if x == 1:\n        return \"a\"\n    elif x == 2:\n        return \"b\"\n    elif x == 3:\n        return \"c\"\n    elif x == 4:\n        return \"d\"\n    elif x == 5:\n        return \"e\"\n    elif x == 6:\n        return \"f\"\n    elif x == 7:\n        return \"g\"\n    elif x == 8:\n        return \"h\"\n    elif x == 9:\n        return \"i\"\n    else:\n        return \"z\"\n"
+}

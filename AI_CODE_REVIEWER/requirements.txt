@@ -1,0 +1,8 @@
+streamlit
+flake8
+black
+radon
+pygments
+jsonschema
+matplotlib
+fpdf

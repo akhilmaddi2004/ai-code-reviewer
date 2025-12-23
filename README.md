@@ -28,12 +28,9 @@ Radon	Complexity & maintainability analysis
 FPDF	PDF report generation
 Python	Core application logic
 
-## 📂 Project Structure
+### 📂 Project Structure
 
-Here is the clean, formatted structure for your README.md file. You can copy and paste these blocks directly into GitHub.
-
-1. 📂 Project Structure
-
+```text
 ai-code-reviewer/
 │
 ├── app.py                  # Main Streamlit application entry point
@@ -56,7 +53,7 @@ ai-code-reviewer/
     ├── 04_black.png
     ├── 05_radon.png
     └── 06_report.png
-    
+ 
 ## ⚠️ Note About Virtual Environment (Important)
 
 The virtual environment (venv) is intentionally not included in this repository.

@@ -32,8 +32,9 @@ Python	Core application logic
 
 ai-code-reviewer/
 │
-├── app.py                     # Main Streamlit application 
+├── app.py                     # Main Streamlit application
 ├── requirements.txt           # Project dependencies
+├── README.md                  # Project documentation
 │
 ├── utils/
 │   ├── analyzer.py            # Flake8 style analysis logic
@@ -44,7 +45,7 @@ ai-code-reviewer/
 ├── output/
 │   └── reports/               # Generated analysis reports
 │
-└── screenshots/               # UI screenshots
+└── screenshots/               # UI screenshots (instead of demo video)
     ├── 01_home.png
     ├── 02_code_input.png
     ├── 03_flake8.png
@@ -182,6 +183,8 @@ streamlit run app.py
 http://localhost:8501
 
 🧪 Example Test Case
+✅ 5. Before vs After Code Comparison
+
 ❌ Poor Code Input
 def calc(a,b):
  if a>10:
@@ -198,7 +201,7 @@ def calc(a,b):
    print(i)
  return None
 
-✅ Improved Code Output (Black Formatted):
+✅ Improved Code Output (Black Formatted)
 def calc(a, b):
     if a > 10:
         if b > 10:
@@ -216,6 +219,7 @@ def calc(a, b):
             print(i)
     return None
 
+Improvements Made
 ✅ Improved Output
 
 - Flake8 flags style issues

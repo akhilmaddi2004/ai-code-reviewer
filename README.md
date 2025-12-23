@@ -28,21 +28,29 @@ Radon	Complexity & maintainability analysis
 FPDF	PDF report generation
 Python	Core application logic
 
-📂 Project Structure
+## 📂 Project Structure
 
 ai-code-reviewer/
 │
-├── app.py                     # Main Streamlit application
+├── app.py                     # Main Streamlit application 
 ├── requirements.txt           # Project dependencies
 │
 ├── utils/
 │   ├── analyzer.py            # Flake8 style analysis logic
 │   ├── formatter.py           # Black formatting logic
 │   ├── complexity.py          # Radon complexity analysis
-│   ├── report.py              # PDF / JSON / TXT report generation
+│   └── report.py              # PDF / JSON / TXT report generation
 │
 ├── output/
-   └── reports/               # Generated analysis reports
+│   └── reports/               # Generated analysis reports
+│
+└── screenshots/               # UI screenshots
+    ├── 01_home.png
+    ├── 02_code_input.png
+    ├── 03_flake8.png
+    ├── 04_black.png
+    ├── 05_radon.png
+    └── 06_report.png
 
 ## ⚠️ Note About Virtual Environment (Important)
 
@@ -117,7 +125,7 @@ Grades:
 
 - Side-by-side display of:
 
-  -Original code
+  - Original code
 
   - Black-formatted code
 
@@ -190,7 +198,7 @@ def calc(a,b):
    print(i)
  return None
 
-✅ Good Code OUTPUT:
+✅ Improved Code Output (Black Formatted):
 def calc(a, b):
     if a > 10:
         if b > 10:
@@ -206,7 +214,7 @@ def calc(a, b):
     else:
         for i in range(0, 10):
             print(i)
-    return Non
+    return None
 
 ✅ Improved Output
 

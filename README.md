@@ -30,29 +30,33 @@ Python	Core application logic
 
 ## 📂 Project Structure
 
+Here is the clean, formatted structure for your README.md file. You can copy and paste these blocks directly into GitHub.
+
+1. 📂 Project Structure
+
 ai-code-reviewer/
 │
-├── app.py                     # Main Streamlit application
-├── requirements.txt           # Project dependencies
-├── README.md                  # Project documentation
+├── app.py                  # Main Streamlit application entry point
+├── requirements.txt        # List of dependencies (streamlit, black, flake8, etc.)
+├── README.md               # Project documentation
 │
-├── utils/
-│   ├── analyzer.py            # Flake8 style analysis logic
-│   ├── formatter.py           # Black formatting logic
-│   ├── complexity.py          # Radon complexity analysis
-│   └── report.py              # PDF / JSON / TXT report generation
+├── utils/                  # Utility modules
+│   ├── analyzer.py         # Flake8 style analysis logic
+│   ├── formatter.py        # Black formatting logic
+│   ├── complexity.py       # Radon complexity analysis
+│   └── report.py           # PDF / JSON / TXT report generation
 │
 ├── output/
-│   └── reports/               # Generated analysis reports
+│   └── reports/            # Directory where generated reports are saved
 │
-└── screenshots/               # UI screenshots (instead of demo video)
+└── screenshots/            # UI images for documentation
     ├── 01_home.png
     ├── 02_code_input.png
     ├── 03_flake8.png
     ├── 04_black.png
     ├── 05_radon.png
     └── 06_report.png
-
+    
 ## ⚠️ Note About Virtual Environment (Important)
 
 The virtual environment (venv) is intentionally not included in this repository.
@@ -185,23 +189,26 @@ http://localhost:8501
 🧪 Example Test Case
 ✅ 5. Before vs After Code Comparison
 
-❌ Poor Code Input
+### ❌ Poor Code Input 
+```python
 def calc(a,b):
- if a>10:
-  if b>10:
-   if a>b:
-    return a-b
-   else:
-    return b-a
+  if a>10:
+    if b>10:
+      if a>b:
+        return a-b
+      else:
+        return b-a
+    else:
+      if a==b:return 0
+      else:return a+b
   else:
-   if a==b:return 0
-   else:return a+b
- else:
-  for i in range(0,10):
-   print(i)
- return None
+    for i in range(0,10):
+      print(i)
+    return None
 
-✅ Improved Code Output (Black Formatted)
+### ✅ Improved Code Output (Auto-Formatted by Black)
+Python
+
 def calc(a, b):
     if a > 10:
         if b > 10:
@@ -217,9 +224,8 @@ def calc(a, b):
     else:
         for i in range(0, 10):
             print(i)
-    return None
+        return None
 
-Improvements Made
 ✅ Improved Output
 
 - Flake8 flags style issues
